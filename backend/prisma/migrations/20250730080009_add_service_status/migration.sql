@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE `Service` ADD COLUMN `approvalStatus` ENUM('PENDING', 'APPROVED', 'REJECTED') NOT NULL DEFAULT 'PENDING';
