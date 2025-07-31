@@ -35,6 +35,9 @@ app.get('/api', (req, res) => {
   res.send('API is running...');
 });
 
-app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
-});
+// Remove app.listen() for Vercel
+// app.listen(port, () => {
+//   console.log(`Server is running on http://localhost:${port}`);
+// });
+
+export default app;
